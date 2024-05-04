@@ -2,7 +2,10 @@
 
 # React to Riches
 
-## Project Description
+## Project Credit:
+This is my final project for Winter 2024 MSCI 342: Principles of Software Engineering completed in collaboration with Liam Mitchell and Mehul Dewit
+
+## Project Features:
 
 ### Sign-up/Sign-in
 
@@ -118,12 +121,6 @@
 - Allows users to input multiple data fields to get a rough credit score
 - Pop-up "more info" button gives the users more information about how their credit score is calculated
 - The calculated credit score is displayed to the user, along with additional inputted insights and information
-
-## Project Credit:
-This is my final project for Winter 2024 MSCI 342: Principles of Software Engineering. 
-
-
-
 
 
 
