@@ -1,0 +1,144 @@
+What did I do yesterday?
+What was in my way?
+What will I do today?
+
+Monday, 02/12/2024
+Liam: Added files for Cypress, verified Jest configuration with sample tests
+Kate: Will start Developing budget page
+Mehul: Will start creating watchlist of favourite stocks
+
+Saturday, 02/17/2024
+Liam: Cleaned out unneeded code (movie review files) from the project repo.
+      Started work on blog posting feature. Updated MySQL connection
+      configuration. Added new components, added new API route. Added
+      routing based on URL.
+
+Monday, 02/19/2024
+Liam: Added functionality for viewing all blog posts as a list, as well as a 
+      more detailed view by clicking on individual posts. Also added the options
+      to delete and edit existing blog posts, if the author_id matches.
+Kate: Created budget file, started routing and added amount and category options.
+Mehul: Created watchlist page
+
+Tuesday, 02/20/2024
+Liam: Improved rendering of tags and author name/profile picture in the app.
+      Added sections for comments and reaction emojis on each blog post. Added
+      relevant database tables to support this functionality.
+Kate: Tried to complete SQL connection for pushing budget inputs to table, not currently working.
+Mehul: Created new stocks page and tried to connect to database with API calls.
+
+Wednesday, 02/21/2024
+Liam: Added unit tests with Jest and UI end-to-end testing with Cypress for 
+      the home page and blog features. Also added description of blog
+      features to the project README.
+
+Saturday, 02/24/2024
+Kate: Fixed SQL connection for budget entries. Still missing date/time option for entries.
+      Added code required for users to be able to add their own categories in their budget.
+Mehul: Completed api routing for mysql connection to allow users to put stocks in their watchlist
+
+Sunday, 02/25/2024
+Kate: Added code required for a set budget limits page, allowing users to set spending limits for their categories.
+      Added piecharts to landing page showing users comparison between budgeted and actual spending.
+      Added date/time of entries of incomes/expenses 
+      Added option to view and delete transactions
+      Added option to view, add and delete categories
+      Added jest test file for limits page
+      Added description of features to project README
+Mehul: Added Alpha Vantage API routing for users to see stock prices on stock page (limited to 25 calls/day)
+      Added jest test file for watchlist
+
+Friday, 03/08/2024
+Mehul: Created community page for users to create and view communities 
+Kate: Created Financial goal page for users to create financial goals
+       No database connection yet, just entry fields and error messages for leaving sections blank
+       Still need to figure out how to move the legend on BudgetLand page
+
+Saturday, 03/09/2024
+Liam: Added login/signup functionality. Use Redux store to allow other
+      components to use the current user's account details, such as name,
+      username, and profile photo. Users can sign-out from the landing page.
+
+Sunday, 03/10/2024
+Kate: Moved goal creation to it's own page
+      Added viewing goals on goals home page
+      Finished all goals mySQL connections
+
+Monday, 03/11/2024
+Liam: Fixed bugs related to posting blogs. Used the new account feature to
+      accurrately post blogs under the current user's name, along with comments
+      and reactions. Started work on a notifications feature.
+Kate: Added status of goals and editing of status
+
+Tuesday, 03/12/2024
+Liam: Completed the notification settings interface, allowing the web app to
+      request access to desktop notifications. The user can also set which types
+      of notifications they want to recieve, and this information is stored on
+      the server.
+
+Wednesday, 03/13/2024
+Liam: Creating new blog posts, comments, and adding reactions triggers new alert
+      events. These notifications get rendered in the notifications interface.
+Mehul: Created feature to add and delete friends on community page
+Kate: Created Savings page
+
+Thursday, 03/14/2024
+Liam: Notifications can now be filtered by the last clear time on a per-user
+      basis, as well as based on the user's settings for allowed alerts. Desktop
+      alerts are sent for all initially rendered alerts. While the notification
+      interface is open, the web app checks for new alerts every ten seconds and
+      creates a desktop alert for any new ones found in the last ten seconds.
+      Created a Videos page for viewing user-shared videos within the web app.
+      Videos are rendered as iframes and can be played on the site, and users can
+      share new videos by pasting a title and video embed link to the server.
+Mehul: Created messaging feature for users to message friends in their friend list
+       Also created jest test files for the community and messaging features
+Kate: Removed savings page, instead added Savings option to incomes/expenses
+
+Friday, 03/15/2024
+Liam: Created/updated Cypress end-to-end tests for the blog feature and account
+      sign-in feature. Also added Jest tests for the account feature, testing
+      account creation, sign-in, and notification settings.
+
+Saturday, 03/23/2024
+Liam: Revamped the account feature to use Google Firebase in lieu of POST
+      requests to the MySQL server. Username/password combinations are now
+      stored in Firebase, and the MySQL server stores the user preferences
+      associated with the given email address, but no passwords are stored. Also
+      updated old tests and documentation to reflect the changes.
+Kate: Created goals Jest test, working on connecting savings and goals progress on mySQL
+      Wrote feature descriptions in readme
+
+Friday, 03/30/2024
+Mehul: Created a credit score checker page that calculates the user's rough credit score based
+       several required inputs
+
+Monday, 04/01/2024
+Mehul: Added a new "more info" button on the credit score page to give users a better idea
+       of how the credit score feature works.
+
+Tuesday, 04/02/2024
+Mehul: Fixed watchlist page to render stocks from mySQL watchlist table
+        Included a "unique" checking parameter to make sure all entries are unique in the table
+Kate: Changed navigation bar layout for optimized user experience.
+
+Thursday, 04/04/2024
+Mehul: Created jest test file for the credit score feature
+Liam: Added page for registering account email with UWaterloo openAPI, checking
+      whether an email address has already been registered or not. Added Express
+      endpoint and Redux state reducer to update an account's API key.
+
+Saturday, 04/06/2024
+Liam: Completed UI for confirming email address and submitting an API key to the
+      MySQL database. Creating components to handle rendering UWaterloo Food
+      Services locations, including outlets and specific franchises. Clicking
+      on franchises renders their menu.
+Mehul: Fixed multiple jest test files
+
+Sunday, 04/07/2024
+Liam: Implemented UI and server endpoints for fetching and rendering important
+      dates provided by the university through their OpenAPI.
+
+Monday, 04/08/2024
+Liam: Updated old test files to account for new changes. Wrote new tests (Jest
+      and Cypress) for the ImportantDates feature. Updated project README.
